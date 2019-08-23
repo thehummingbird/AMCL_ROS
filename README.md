@@ -2,8 +2,8 @@
 
 #Particles before AMCL localization
 
-<img src="../../one.png">
+<img src="https://github.com/thehummingbird/AMCL_ROS/blob/master/one.png">
 
 #Particles after AMCL localization
 
-<img src="../../two.png">
+<img src=".https://github.com/thehummingbird/AMCL_ROS/blob/master/two.png">
