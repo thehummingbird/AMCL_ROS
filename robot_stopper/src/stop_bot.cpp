@@ -1,6 +1,7 @@
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
 #include "sensor_msgs/LaserScan.h"
+#include "ros/time.h"
 
 class StopBot
 {
@@ -27,9 +28,9 @@ void StopBot::scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan)
   if(zero_deg < 0.28)
   {
     motor_command.linear.x=0;
-    //motor_command.angular.z=0;
     motor_control_pub.publish(motor_command);
     ROS_INFO("Obstacle too close! Robot stopped!\n");
+    ros::Duration(10,0).sleep();
   }
 }
 
