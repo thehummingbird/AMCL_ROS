@@ -1,4 +1,4 @@
-#Where am I for Udacity Robotics Software Engineer ND
+#Readme construction in progress
 
 #Particles before AMCL localization
 
